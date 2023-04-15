@@ -14,14 +14,23 @@
    //Type appropriate comment here, and begin script below
    var email = g_form.getValue('email');
    var ph = g_form.getValue('phone_number');
-   var ph_pattern = /^\+91[6-9][0-9]{3}-[0-9]{6}$/;
+   var ph_pattern = /^\+91+ +[6-9][0-9]{3}-[0-9]{6}$/;
    var ph_result = ph.match(ph_pattern);
-   var email_pattern = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+   var email_pattern = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\.+[a-zA-Z]+$/;
    var email_result = email.match(email_pattern); 
+   
    if(ph_result && email_result){
-	return true;
+		return true;
 	}
-   alert("Invalid Phone number or Email. Please verify and Submit again!");
+	if(!ph_result && email_result){
+		g_form.addErrorMessage("Please Check the Phone number format is in (+91 xxxx-nnnnnn)");
+	}
+	else if(!email_result && ph_result){
+		g_form.addErrorMessage("Please Check the Email  format is in (example@domain.com)");
+	}
+	else{
+		g_form.addErrorMessage("Make sure the Email and Phone number formats are in (+91 xxxx-nnnnnn) and (example@domain.com)");
+	}
    return false;
    
 }]]></script>
@@ -31,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f66bb9881b9e6510b0dcfcc6cc4bcb43</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Personal details validate</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -39,7 +48,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_f66bb9881b9e6510b0dcfcc6cc4bcb43</sys_update_name>
         <sys_updated_by>sredevops_usr03</sys_updated_by>
-        <sys_updated_on>2023-04-14 18:27:46</sys_updated_on>
+        <sys_updated_on>2023-04-15 00:43:08</sys_updated_on>
         <table>x_58872_needit_personal_details</table>
         <type>onSubmit</type>
         <ui_type>10</ui_type>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="9793f9801b9e6510b0dcfcc6cc4bcb31" extends="task" label="Personal details" max_length="40" name="x_58872_needit_personal_details" type="collection">
         <element label="Email" mandatory="true" max_length="100" name="email" type="string_full_utf8"/>
-        <element label="Phone Number" mandatory="true" max_length="16" name="phone_number" type="string"/>
+        <element label="Requester for phone number" mandatory="true" max_length="16" name="phone_number" type="string"/>
     </element>
 </database>

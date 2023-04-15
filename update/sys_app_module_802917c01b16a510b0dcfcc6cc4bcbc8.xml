@@ -4,39 +4,41 @@
         <application display_value="Needit">2db5f9801b9e6510b0dcfcc6cc4bcbe6</application>
         <assessment/>
         <device_type/>
-        <filter/>
+        <filter table="x_58872_needit_personal_details">closed_at&gt;=javascript:gs.beginningOfYesterday()^EQ<item endquery="false" field="closed_at" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfYesterday()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint/>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Personal details</mobile_title>
+        <mobile_title>Closed</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_58872_needit_personal_details</name>
-        <order/>
+        <order>500</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
         <roles>x_58872_needit.personal_details_user</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>sredevops_usr03</sys_created_by>
-        <sys_created_on>2023-04-14 17:00:57</sys_created_on>
+        <sys_created_on>2023-04-15 00:18:06</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e9b579041b9e6510b0dcfcc6cc4bcbfc</sys_id>
+        <sys_id>802917c01b16a510b0dcfcc6cc4bcbc8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Personal details</sys_name>
+        <sys_name>Closed</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_app_module_e9b579041b9e6510b0dcfcc6cc4bcbfc</sys_update_name>
+        <sys_update_name>sys_app_module_802917c01b16a510b0dcfcc6cc4bcbc8</sys_update_name>
         <sys_updated_by>sredevops_usr03</sys_updated_by>
-        <sys_updated_on>2023-04-14 17:00:57</sys_updated_on>
+        <sys_updated_on>2023-04-15 00:18:06</sys_updated_on>
         <timeline_page/>
-        <title>Personal details</title>
+        <title>Closed</title>
         <uncancelable>false</uncancelable>
-        <view_name/>
+        <view_name>Closed</view_name>
         <window_name/>
     </sys_app_module>
 </record_update>
